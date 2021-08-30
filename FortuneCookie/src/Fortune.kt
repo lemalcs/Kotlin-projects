@@ -1,7 +1,13 @@
 fun main()
 {
-   var result: String=getFortuneCookie()
-    println("Your fortune is: $result")
+    var result: String
+    for(i in (0..9))
+    {
+        result=getFortuneCookie()
+        println("Your fortune is: $result")
+        if (result.startsWith("Take it easy"))
+            break
+    }
 }
 
 fun getFortuneCookie():String
